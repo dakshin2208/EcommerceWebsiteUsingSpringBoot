@@ -1,6 +1,11 @@
 package com.ecommerce.Project.controller.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity(name = "Categories")
 public class Category {
+    @Id
     private Long id;
     private String name;
 
@@ -8,6 +13,8 @@ public class Category {
         this.id = id;
         this.name = name;
     }
+
+    public Category() {}
 
     public Long getId() {
         return id;
