@@ -1,11 +1,16 @@
-package com.ecommerce.Project.controller.model;
+package com.ecommerce.Project.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.springframework.boot.autoconfigure.web.WebProperties;
 
-@Entity(name = "Categories")
+@Entity(name = "category")
+
 public class Category {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 

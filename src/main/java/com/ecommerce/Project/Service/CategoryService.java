@@ -1,6 +1,6 @@
 package com.ecommerce.Project.Service;
 
-import com.ecommerce.Project.controller.model.Category;
+import com.ecommerce.Project.model.Category;
 
 import java.util.List;
 
